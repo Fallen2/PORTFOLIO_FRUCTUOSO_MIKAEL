@@ -308,8 +308,8 @@ a {
 }
 
 .project-card-title h2 {
-    font-size: 23px;
-    font-weight : 300;
+    font-size: 18px;
+    font-weight : 500;
     font-family : 'QuickSand';
     text-align: center;
     margin: 5px 0 0 0;
@@ -382,6 +382,10 @@ a {
     background-image: url(../images/GMAIL_LOGO.png);
     background-size: 64px;
     transition: background-image 0.1s ease-in-out;
+}
+
+.project-information .project-title{
+    margin-top:80px;
 }
 
 #gmail:hover {
