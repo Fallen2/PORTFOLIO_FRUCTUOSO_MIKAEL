@@ -18,6 +18,8 @@
     --yellow-hover: rgb(240, 228, 58);
 }
 
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -25,6 +27,25 @@ html {
 html, body {
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/GOTHIC.ttf") format("ttf"),
+        url("../fonts/GOTHICB.ttf") format("ttf"),
+        url("../fonts/GOTHICBI.ttf") format("ttf"),
+        url("../fonts/GOTHICI.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "QuickSand";
+    src: url("../fonts/QuickSand-Regular.otf") format("otf"),
+        url("../fonts/QuickSand-Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/Futura Heavy.otf") format("otf");
 }
 
 .content {
@@ -332,6 +353,7 @@ width: 99vw;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    
 }
 
 .project-title h1 {
@@ -347,17 +369,23 @@ width: 99vw;
 
 .presentation-container {
     width: 40%;
+    
 }
 
 .presentation-img {
     margin-right: 80px;
     margin-top: 40px;
+    width :  40%;
+    
 }
 
-.presentation-img img {
+.presentation-img iframe {
     width: 38vw;
+    height: 21vw;
     border-style: solid;
+    border-radius: 10px;
     border-color: var(--sub-grey);
+    padding-bottom: 50px;
 }
 
 .project-information {
@@ -367,13 +395,23 @@ width: 99vw;
 .contributions-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 80px;
+    margin-left:  80px;
+    margin-top: 50px;
+}
+
+.contributions-container-2 {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-bottom: 65px;
 }
 
 .contribution {
-    width: 35%;
-    margin-top: 50px;
+    width: 100%;
 }
 
 .social-network-container {
@@ -408,6 +446,11 @@ width: 99vw;
 
 #linkedin:hover {
     background-image: url(../images/LINKEDIN_LOGO_ON_HOVER.png); 
+}
+
+li{
+    list-style-type: circle;
+    color  : var(--main-text);
 }
 
 

@@ -12,6 +12,10 @@ app.get('/temp-page.html', (req, res) => {
     res.sendFile('/pages/temp-page.html', { root: __dirname });
 });
 
+app.get('/MappaMundi.html', (req, res) => {
+    res.sendFile('/pages/MappaMundi.html', { root: __dirname });
+});
+
 app.get('/resume', (req, res) => {
     //request(__dirname + req.params.file).pipe(res);
    res.set( 'Content-Type', 'application/pdf' );
