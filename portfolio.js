@@ -16,6 +16,10 @@ app.get('/MappaMundi.html', (req, res) => {
     res.sendFile('/pages/MappaMundi.html', { root: __dirname });
 });
 
+app.get('/Anirya_and_the_Upside-Down_World.html', (req, res) => {
+    res.sendFile('/pages/Anirya_and_the_Upside-Down_World.html', { root: __dirname });
+});
+
 app.get('/resume', (req, res) => {
     //request(__dirname + req.params.file).pipe(res);
    res.set( 'Content-Type', 'application/pdf' );
