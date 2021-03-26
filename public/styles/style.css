@@ -375,6 +375,13 @@ width: 99vw;
     
 }
 
+.presentation-img img {
+    width :  100%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--sub-grey);
+}
+
 .presentation-img iframe {
     width: 38vw;
     height: 21vw;

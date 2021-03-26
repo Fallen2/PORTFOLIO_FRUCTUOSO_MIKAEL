@@ -16,6 +16,10 @@ app.get('/MappaMundi.html', (req, res) => {
     res.sendFile('/pages/MappaMundi.html', { root: __dirname });
 });
 
+app.get('/Alpha_6.html', (req, res) => {
+    res.sendFile('/pages/alpha_6.html', { root: __dirname });
+});
+
 app.get('/Anirya_and_the_Upside-Down_World.html', (req, res) => {
     res.sendFile('/pages/Anirya_and_the_upside-down_world.html', { root: __dirname });
 });
