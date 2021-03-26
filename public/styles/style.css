@@ -31,21 +31,17 @@ html, body {
 
 @font-face {
     font-family: "Century Gothic";
-    src: url("../fonts/GOTHIC.ttf") format("ttf"),
-        url("../fonts/GOTHICB.ttf") format("ttf"),
-        url("../fonts/GOTHICBI.ttf") format("ttf"),
-        url("../fonts/GOTHICI.ttf") format("ttf");
+    src: url("../fonts/GOTHIC.TTF") format("truetype");
 }
 
 @font-face {
     font-family: "QuickSand";
-    src: url("../fonts/QuickSand-Regular.otf") format("otf"),
-        url("../fonts/QuickSand-Bold.otf") format("otf");
+    src: url("../fonts/Quicksand-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Futura";
-    src: url("../fonts/Futura Heavy.otf") format("otf");
+    src: url("../fonts/Futura Heavy.otf") format("opentype");
 }
 
 .content {
