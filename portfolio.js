@@ -17,10 +17,14 @@ app.get('/MappaMundi.html', (req, res) => {
 });
 
 app.get('/Alpha_6.html', (req, res) => {
-    res.sendFile('/pages/alpha_6.html', { root: __dirname });
+    res.sendFile('/pages/Alpha_6.html', { root: __dirname });
 });
 
-app.get('/Anirya_and_the_Upside-Down_World.html', (req, res) => {
+app.get('/Optophobia.html', (req, res) => {
+    res.sendFile('/pages/Optophobia.html', { root: __dirname });
+});
+
+app.get('/Anirya_and_the_upside-down_world.html', (req, res) => {
     res.sendFile('/pages/Anirya_and_the_upside-down_world.html', { root: __dirname });
 });
 

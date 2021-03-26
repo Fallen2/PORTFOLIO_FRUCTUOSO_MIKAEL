@@ -46,6 +46,7 @@ html, body {
 
 .content {
     font-family: "Century Gothic";
+    text-align: justify;
 }
 
 .title {

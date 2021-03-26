@@ -32,14 +32,14 @@
 
         <div class="project-information">
             <div class="project-title">
-                <h1>Alpha_6</h1>
-                <h2 class="subtitle">FPS</h2>
+                <h1>Optophobia</h1>
+                <h2 class="subtitle">First Person Horror Game</h2>
             </div>
     
             <div class="project-presentation">
                 <div class="presentation-container">
                     <h2>Présentation</h2>
-                    <p class="content">Alpha_6 is a first-person shooter game which development started in a Unity university course. The development team is composed of 2 game developers.
+                    <p class="content">Optophobia is a first person horror game which development started through the 2021 January Global Game Jam (Lost and Found Theme). The development team is composed of 3 members, 2 game developers and 1 sound designer. Our objective now is to provide a complete 15-minute horror experience.
                         </p>
                     <div class="tag-container">
                         <div class="tag" style="background-color: var(--tag-red)">
@@ -52,7 +52,7 @@
                             <span>Dev</span>
                         </div>
                         <div class="tag" style="background-color: var(--tag-dark-blue)">
-                            <span>3D Graphist</span>
+                            <span>LD</span>
                         </div>
                         <div class="tag" style="background-color: var(--tag-genre)">
                             <span>FPS</span>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="presentation-img">
-                    <img src="../images/alpha_6.jpg">
+                    <img src="../images/Optophobia.jpg">
                 </div>
             </div>
         </div>
@@ -69,23 +69,20 @@
             <div class="contributions-container-2">
                 <div class="contribution">
                     <h2>Gameplay & Game Design</h2>
-                    <p class="content">Our goal was to provide a speedrun experience based on a simple mechanic. We came up with a mechanic based on gun bullets that bounce on walls and deal damages according to the number of bounces made before touching an enemy. With this concept, we could easily imagine speedrunners remembering every enemy spot and killing them without even looking at them.</p>
+                    <p class="content">During the game design discussion, I came up with a game mechanic based on how children handle fear. When they are afraid, children usually hide their eyes with their hands: if they cannot see the monster, he will not see them. <br><br>
+                        We implemented this mechanic in Optophobia. When the player encounters the Creature, he’ll need to hide and close his eyes after breaking its chaser’s line of sight. Hiding and closing his eyes allow the player to progress in the haunted manor and unveil its mysteries. 
+                        </p>
                 </div>
                 <div class="contribution" style="float: left;">
-                    <h2>Visuals and feedbacks</h2>
-                    <p class="content">I implemented a visual feedback on the tiles touched by a bullet. It allows the players to remember the path their bullet took before hitting the enemy for speedrun purposes. <br><br>
-                        I also worked on the enemy death explosion visual feedback, highlighting where the bullet hits him. On hit, it converts the enemy to a tiled 3D box and spawns a spherical force emitter at the impact point location resulting in the explosion of the enemy in dozens of little colored cubes.</p>
+                    <h2>Level Design</h2>
+                    <p class="content">I designed and implemented the first two levels of the game. They take place in an old manor with a lot of entangled hallways in order to create a labyrinthic effect.  </p>
                 </div>
             </div>
             <div class="contributions-container-2">
                 <div class="contribution">
                     <h2>Development</h2>
-                    <p class="content">I implemented the different behaviors of a Melee and a Ranged enemy:</p>
-                        <ul  class="content">
-                            <li>The melee enemy starts following the player on sight and blows himself up when near enough.</li>
-                            <li>The ranged enemy starts following the player on sight and locks him with his laser beam before releasing it a few seconds after.</li>
-                        </ul>
-                        <p class="content">I also developed an algorithm that allows the level designers to create tiled rectangular 3D shapes with density, scale and gap control. In this project, it was used in Editor for level design purpose and in-game for the enemy explosions and the bullet visual feedback on wall bounce.</p>
+                    <p class="content">The game was developed using the 2019 version of Unity. I implemented the different behaviors of the Creature (Wander, Follow) using the Unity Navmesh component with a system of nodes for the navigation and raycasting for the line of sight. <br><br>
+                        The challenge for the Creature was to elaborate an AI that responded to the rhythm of the game. The scripts I worked on allow the level designers to control the meeting frequency of the Creature and its spawn positions which are really important to ensure the horror effect and staging in the game.</p>
                 </div>
             </div>
         </div>
