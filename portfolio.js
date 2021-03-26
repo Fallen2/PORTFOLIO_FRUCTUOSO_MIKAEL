@@ -17,7 +17,7 @@ app.get('/MappaMundi.html', (req, res) => {
 });
 
 app.get('/Anirya_and_the_Upside-Down_World.html', (req, res) => {
-    res.sendFile('/pages/Anirya_and_the_Upside-Down_World.html', { root: __dirname });
+    res.sendFile('/pages/Anirya_and_the_upside-down_world.html', { root: __dirname });
 });
 
 app.get('/resume', (req, res) => {
