@@ -28,6 +28,10 @@ app.get('/Anirya_and_the_upside-down_world.html', (req, res) => {
     res.sendFile('/pages/Anirya_and_the_upside-down_world.html', { root: __dirname });
 });
 
+app.get('/Jurrassic_Snap.html', (req, res) => {
+    res.sendFile('/pages/Jurrassic_Snap.html', { root: __dirname });
+});
+
 app.get('/resume', (req, res) => {
     //request(__dirname + req.params.file).pipe(res);
    res.set( 'Content-Type', 'application/pdf' );
