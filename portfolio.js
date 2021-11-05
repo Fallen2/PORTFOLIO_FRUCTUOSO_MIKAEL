@@ -28,8 +28,8 @@ app.get('/Anirya_and_the_upside-down_world.html', (req, res) => {
     res.sendFile('/pages/Anirya_and_the_upside-down_world.html', { root: __dirname });
 });
 
-app.get('/Jurrassic_Snap.html', (req, res) => {
-    res.sendFile('/pages/Jurrassic_Snap.html', { root: __dirname });
+app.get('/Jurassic_Snap.html', (req, res) => {
+    res.sendFile('/pages/Jurassic_Snap.html', { root: __dirname });
 });
 
 app.get('/resume', (req, res) => {
