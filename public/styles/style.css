@@ -227,6 +227,12 @@ a {
 width: 99vw;
 }
 
+#presentation-photo {
+    float : left;
+    width: 20vw;
+    height: 20vw;
+}
+
 .page-container {
     overflow-x: hidden;
     overflow-y: hidden;
