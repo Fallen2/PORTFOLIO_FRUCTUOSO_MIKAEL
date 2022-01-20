@@ -422,6 +422,14 @@ width: 99vw;
     width :  100%;
 }
 
+.description-img-woborder {
+    width :  100%;
+}
+
+.description-img-woborder img {
+    width :  100%;
+}
+
 .description-img img {
     width :  100%;
     border-style: solid;
