@@ -16,8 +16,9 @@
     --tag-genre: #2D2F36;
     --tag-year: #7a808a;
     --yellow-hover: rgb(240, 228, 58);
+    --bg-violet : #262121;
+    --bg-brown : #58312d;
 }
-
 
 
 html {
@@ -27,6 +28,10 @@ html {
 html, body {
     margin: 0;
     padding: 0;
+}
+
+html strong{
+    color: var(--yellow-hover);
 }
 
 @font-face {
@@ -57,7 +62,6 @@ h1 {
     font-size: 42px;
     font-family: "Futura";
     color: var(--main-text);
-    margin-top: 0;
 }
 
 h2 {
@@ -66,8 +70,12 @@ h2 {
     color: var(--main-text);
 }
 
+.contribution h2{
+    margin-top : 0;
+}
+
 p {
-    font-size: 17px;
+    font-size: 18px;
     font-family: "Century Gothic";
     color: var(--main-text);
 }
@@ -343,7 +351,7 @@ width: 99vw;
     font-weight : 500;
     font-family : 'QuickSand';
     text-align: center;
-    margin: 5px 0 0 0;
+    /*margin: 5px 0 0 0;*/
 }
 
 .project-short-desc-container {
@@ -353,16 +361,24 @@ width: 99vw;
 }
 
 .project-presentation {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 30px;*/
     
 }
 
+.project-title {
+    width : 100%;
+    text-align: center;
+    margin : 0;
+}
+
+
+
 .project-title h1 {
     font-size: 60px;
-    margin-top: 80-4px;
+    /*margin-top: 80-4px;*/
     margin-bottom: 0;
 }
 
@@ -372,14 +388,17 @@ width: 99vw;
 }
 
 .presentation-container {
-    width: 40%;
-    
+    width: 100%;
+}
+
+.presentation-container h1{
+    font-size: 60px;
 }
 
 .presentation-img {
     margin-right: 80px;
     margin-top: 40px;
-    width :  40%;
+    width :  100%;
     
 }
 
@@ -399,25 +418,71 @@ width: 99vw;
     padding-bottom: 50px;
 }
 
+.description-img {
+    width :  100%;
+}
+
+.description-img img {
+    width :  100%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--sub-grey);
+}
+
+#project-information-presentation{
+    margin-top : 50px;
+    margin-left : 80px;
+    margin-bottom: 50px;
+}
+
+#project-information-gamedesign{
+    background-color: var(--bg-violet);
+}
+
+#project-information-development{
+    background-color: var(--bg-brown);
+}
+
 .project-information {
-    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-information h1{
+    margin-bottom : 0px;
+}
+
+.project-information-title {
+    width: 100%;
+    text-align: center;
+}
+
+.project-information-title h1{
+    font-size: 60px;
+}
+
+.project-information-container {
+    display: flex;
+    width:45%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .contributions-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 80px;
     margin-left:  80px;
     margin-top: 50px;
 }
 
-.contributions-container-2 {
+.contributions-container-object {
     display: flex;
-    width: 40%;
+    width: 45%;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-right: 80px;
     margin-bottom: 65px;
 }
 

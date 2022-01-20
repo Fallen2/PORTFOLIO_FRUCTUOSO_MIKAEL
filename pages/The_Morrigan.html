@@ -30,72 +30,160 @@
             </div>
         </div>
 
-        <div class="project-information">
-            <div class="project-title">
-                <h1>The Morrígan</h1>
-                <h2 class="subtitle">Souls-like</h2>
-            </div>
-    
-            <div class="project-presentation">
-                <div class="presentation-container">
-                    <h2>Présentation</h2>
-                    <p class="content">Anirya and the upside down world is a 2D metroidvania student game made in Unity. The team was composed of 10 students. 
-                        </p>
-                    <div class="tag-container">
-                        <div class="tag" style="background-color: var(--tag-red)">
-                            <span>Unity 3D</span>
-                        </div>
-                        <div class="tag" style="background-color: var(--tag-pastel-green)">
-                            <span>GD</span>
-                        </div>
-                        <div class="tag" style="background-color: var(--tag-pistachio-green)">
-                            <span>Dev</span>
-                        </div>
-                        <div class="tag" style="background-color: var(--tag-dark-blue)">
-                            <span>AI</span>
-                        </div>
-                        <div class="tag" style="background-color: var(--tag-genre)">
-                            <span>Souls-like</span>
+        <div class="project-information" id="project-information-presentation">
+            <div class="project-information-container">
+                <div class="project-presentation">
+                    <div class="presentation-container">
+                        <h1 class="title">The Morrígan</h1>
+                        <h2 class="subtitle">A light RPG Souls-like</h2>
+                        <p class="content">Anirya and the upside down world is a 2D metroidvania student game made in Unity. The team was composed of 10 students. Anirya and the upside down world is a 2D metroidvania student game made in Unity. The team was composed of 10 students. Anirya and the upside down world is a 2D metroidvania student game made in Unity. The team was composed of 10 students. Anirya and the upside down world is a 2D metroidvania student game made in Unity. The team was composed of 10 students. Anirya and the upside down world is a 2D metroidvania student game made in Unity. The team was composed of 10 students. 
+                            </p>
+                        <div class="tag-container">
+                            <div class="tag" style="background-color: var(--tag-red)">
+                                <span>Unity 3D</span>
+                            </div>
+                            <div class="tag" style="background-color: var(--tag-pastel-green)">
+                                <span>GD</span>
+                            </div>
+                            <div class="tag" style="background-color: var(--tag-pistachio-green)">
+                                <span>Dev</span>
+                            </div>
+                            <div class="tag" style="background-color: var(--tag-dark-blue)">
+                                <span>AI</span>
+                            </div>
+                            <div class="tag" style="background-color: var(--tag-genre)">
+                                <span>Souls-like</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="project-information-container">
                 <div class="presentation-img">
                     <img src="../images/The_Morrigan.png">
                 </div>
             </div>
         </div>
-
-        <div class="contributions-container">
-            <div class="contributions-container-2">
-                <div class="contribution">
-                    <h2>Game Design</h2>
-                    <p class="content">I participated in the game design research and worked on player skills, enemy designs and player progression features based on my metroidvania experience. I also worked on game balance and gamefeel issues.</p>
-                </div>
-                <div class="contribution">
-                    <h2>Level Design</h2>
-                    <p class="content">I level designed the first chapter of the game and its assets integration. The main challenge was to make a level design allowing the player to have a metroidvania experience in a 15-minute vertical slice. </p>
-                </div>
+        <div class="project-information" id="project-information-gamedesign">
+            <div class="project-information-title">
+                <h1 class="title">Game Design</h1>
             </div>
-            <div class="contributions-container-2">
-                <div class="contribution">
-                    <h2>Development</h2>
-                    <p class="content">During the project, I was the Lead Developer and managed the development team. I worked on the following features:</p>
-                        <ul  class="content">
-                            <li>Custom 2D physic player controller (movements, slope management prototype, combat)</li>
-                            <li>Player and enemies interactions</li>
-                            <li>Player related user interfaces</li>
-                            <li>Respawn and checkpoint system</li>
-                            <li>Wolf melee enemy AI</li>
-                            <li>Waghzen (Boss)  AI</li>
-                        </ul>
+
+            <div class="contributions-container">
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <div class="description-img">
+                            <img src="../images/Combat_System.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="contribution">
-                    <h2>Visual Effects</h2>
-                    <p class="content">I participated in the animation creation process as the Lead Animator. I designed and implemented visual effects using Unity particle systems.</p>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>A unique combat system inspired by fencing. Position yourself, dodge and hit your foes ! </h2>
+                        <p class="content">The main protagonist of our game is a Young Celt, a woman overtrained to face the abomination living in the forest. Even overtrained she remains human, so we wanted the player to fight enemies that could kill her with pure strength, but also ones that could be killed efficiently with a precise blow, as represented in the <strong>David and Goliath</strong> myth. Our goal was to <strong>make the player feel proud of himself after beating each enemy</strong>, and even prouder if he took no damage during the process. 
+                        <br><br>Thus, we imagined that enemies had <strong>weak points</strong> placed on their body and provided the player a kit of movement that allowed him to dodge incoming attacks if well-timed and hit weak points precisely. A spear seemed to be the best answer to our demands, providing both <strong>range and precision while keeping the thrill brought by close combat situations</strong>.
+                            </p>
+                    </div>
+                </div>
+    
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <div class="description-img">
+                            <img src="../images/Life_Corruption_System.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>A health corruption mechanic rewarding precision.</h2>
+                        <p class="content">In order to encourage players to take advantage of our weak point system, we designed a second mechanic based on attack optimization and precision as a support of our core gameplay: <strong>the corruption</strong>. The Danann Forest is full of former humans that got cursed by a god for their misbehavior towards him, they are now controlled by a corrupted liquid called the “Altered Sap”. The idea was that hitting them on a non-weak point spot would project some Altered Sap that would hurt the player.
+                            <br><br>Thus, we designed health points that could be in three different states: Full, empty and <strong>corrupted health points</strong>. Corrupted health points are <strong>borrowed to the player when he hits an enemy on a non-weak point spot</strong> and <strong>are lost in addition to full health points</strong> when the player is damaged. However, corrupted health points<strong> can be recovered </strong> with a conclusive <strong>hit in the enemy’s weak point</strong> or on enemy death. With this mechanic, we expect experienced player to optimize their fight, alternating between normal hits and weak point hits.
+                            </p>
+                    </div>
+                </div>
+    
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <div class="description-img">
+                            <img src="../images/Item_Based_Progression.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>An item-based progression encouraging exploration.</h2>
+                        <p class="content">In the Morrígan, we wanted to <strong>encourage exploration and support the narrative</strong> through our progression system.
+                            Thus, we opted for an <strong>item-based progression system</strong> so we could spread items around the map to <strong>reward exploration</strong>, <strong>relate narrative content</strong> on their description and leave us the opportunity to <strong>acquire them at merch sites</strong>. 
+                            </p>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
+        <div class="project-information" id="project-information-development">
+            <div class="project-information-title">
+                <h1 class="title">Development</h1>
+            </div>
+
+            <div class="contributions-container">
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <div class="description-img">
+                            <img src="../images/Combat_System.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>Player Controller and Camera Management</h2>
+                        <p class="content">Our first goal was to be able to <strong>provide a fun experience to the player in a scene without enemies or interactable objects</strong>. The simple fact of moving the player in the scene, rotating the camera and locking objects had to be pleasant.
+                            <br><br>For this purpose, I developed and tuned the following features:
+                            <br>-	Script driven movements using Unity Blend Tree system
+                            <br>-	Third person camera using Cinemachine 
+                            <br>-	Lock enemy feature and camera transitions using Cinemachine
+                            </p>
+                    </div>
+                </div>
+    
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <div class="description-img">
+                            <img src="../images/Life_Corruption_System.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>Game loop and combat system</h2>
+                        <p class="content">I developed and tuned the following features:
+                            <br>-	Life and stamina logics
+                            <br>-	Dodge logic
+                            <br>-	Root motion driven attacks
+                            <br>-	Weak point logic
+                            </p>
+                    </div>
+                </div>
+
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <div class="description-img">
+                            <img src="../images/Life_Corruption_System.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>Enemies</h2>
+                        <p class="content">I developed and tuned the following features:
+                            <br>-	Enemy AI including roaming, player detection and combat system using Unity’s Animation State Machine
+                            <br>-	Enemy loop (Health point loss, death)
+                            </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div class="copyright-section content">
             <p>Copyright © 2021 by Mikaël Fructuoso | All images, logos and names are used with permission</p>
         </div>
