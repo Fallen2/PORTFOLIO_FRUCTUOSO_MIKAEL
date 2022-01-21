@@ -101,9 +101,13 @@ p {
 
 .tag-container {
     margin-top: 10px;
-    width: 50%;
+    width: 100%;
     text-align: left;
     overflow: hidden;
+}
+
+.project-tag{
+    width: 50%;
 }
 
 .tag {
