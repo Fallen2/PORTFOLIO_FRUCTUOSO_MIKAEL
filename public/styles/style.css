@@ -101,7 +101,7 @@ p {
 
 .tag-container {
     margin-top: 10px;
-    width: 100%;
+    width: 50%;
     text-align: left;
     overflow: hidden;
 }
@@ -212,7 +212,19 @@ p {
     margin-top: 6px;
 }
 
+.header-anchor-project {
+    font-family: "Futura";
+    font-size: 18px;
+    color: var(--main-text);
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
 .header-anchor:hover a{
+    color: var(--yellow-hover);
+}
+
+.header-anchor-project:hover a{
     color: var(--yellow-hover);
 }
 
@@ -225,9 +237,10 @@ a {
     font-size: 0;
     margin-top:45px;
     width: 99vw;
-    height: 44vw;
+    height: 47vw;
     overflow:hidden;
     background-color: black;
+    margin-bottom : -30px;
 
 }
 
@@ -289,6 +302,18 @@ width: 99vw;
 }
 
 #AboutMe {
+    scroll-margin-top: 44px;
+}
+
+#project-information-presentation {
+    scroll-margin-top: 44px;
+}
+
+#project-information-gamedesign {
+    scroll-margin-top: 44px;
+}
+
+#project-information-development {
     scroll-margin-top: 44px;
 }
 
@@ -399,7 +424,15 @@ width: 99vw;
     margin-right: 80px;
     margin-top: 40px;
     width :  100%;
-    
+}
+
+.presentation-vid {
+    margin-right: 80px;
+    width :  100%;
+}
+
+.presentation-vid iframe {
+    width : 100%;
 }
 
 .presentation-img img {
