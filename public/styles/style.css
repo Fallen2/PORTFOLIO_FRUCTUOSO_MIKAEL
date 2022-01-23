@@ -301,7 +301,7 @@ width: 99vw;
 
 .copyright-section {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -545,6 +545,7 @@ width: 99vw;
 }
 
 .social-network-container {
+    margin-bottom : 50px;
     display: flex;
     justify-content: center;
     gap: 26px;
