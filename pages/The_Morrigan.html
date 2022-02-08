@@ -89,6 +89,7 @@
             <div class="contributions-container">
                 <div class="contributions-container-object">
                     <div class="contribution">
+                        <h2>A unique combat system inspired by fencing. Position yourself, dodge and hit your foes ! </h2>
                         <div class="description-img">
                             <img src="../images/Combat_System.png">
                         </div>
@@ -96,7 +97,6 @@
                 </div>
                 <div class="contributions-container-object">
                     <div class="contribution">
-                        <h2>A unique combat system inspired by fencing. Position yourself, dodge and hit your foes ! </h2>
                         <p class="content">The main protagonist of our game is a Young Celt, a woman overtrained to face the abomination living in the Danann forest. Even overtrained she remains human, so we wanted the player to fight enemies that could kill her with pure strength, but also ones that could be killed efficiently with a precise blow, as represented in the <strong>David and Goliath</strong> myth. Our goal was to <strong>make the player feel proud of himself after beating each enemy</strong> and even prouder if he took no damage during the fight. 
                         <br><br>Thus, we designed enemies with <strong>weak points</strong> placed on their bodies and provided players with a movement kit that allows them to dodge incoming attacks if well-timed and hit weak points with precision. A spear seemed to be the best answer to our design goals, providing both <strong>range and precision while keeping the thrill brought by close combat situations</strong>.
                             </p>
@@ -105,6 +105,7 @@
     
                 <div class="contributions-container-object">
                     <div class="contribution">
+                        <h2>A health corruption mechanic rewarding precision.</h2>
                         <div class="description-img">
                             <img src="../images/Life_Corruption_System.png">
                         </div>
@@ -112,7 +113,7 @@
                 </div>
                 <div class="contributions-container-object">
                     <div class="contribution">
-                        <h2>A health corruption mechanic rewarding precision.</h2>
+                        
                         <p class="content">In order to encourage players to take advantage of our weak point system, we designed a second mechanic based on attack optimization and precision as a support of our core gameplay: <strong>the corruption</strong>. The Danann Forest is full of former humans that got cursed by a Celtic god for their misbehavior towards him, they are now controlled by a corrupted liquid called the “Altered Sap”. Hitting them on a non-weak point spot will spill some Altered Sap that will hurt the player.
                             <br><br>Thus, we designed health points that could be in three different states: Full, empty and <strong>corrupted health points</strong>. Corrupted health points are <strong>borrowed to the player when he hits an enemy on a non-weak point spot</strong> and <strong>are lost in addition to full health points</strong> when the player is damaged. However, corrupted health points<strong> can be recovered </strong> with a conclusive <strong>hit in the enemy’s weak point</strong> or on enemy death. With this mechanic, we expect experienced player to optimize their fight, alternating between normal hits and weak point hits.
                             </p>
@@ -121,6 +122,7 @@
     
                 <div class="contributions-container-object">
                     <div class="contribution">
+                        <h2>An item-based progression encouraging exploration.</h2>
                         <div class="description-img">
                             <img src="../images/Item_Based_Progression.png">
                         </div>
@@ -128,7 +130,6 @@
                 </div>
                 <div class="contributions-container-object">
                     <div class="contribution">
-                        <h2>An item-based progression encouraging exploration.</h2>
                         <p class="content">In the Morrígan, we wanted to <strong>encourage exploration and support the narrative</strong> through our progression system.
                             Thus, we opted for an <strong>item-based progression system</strong> so we could spread items through the map to <strong>reward exploration</strong>, <strong>relate narrative content</strong> on their description and leave players the opportunity to <strong>acquire them at merch sites</strong>. 
                             </p>
@@ -145,44 +146,93 @@
             <div class="contributions-container">
                 <div class="contributions-container-object">
                     <div class="contribution">
+                        <h2>Character Controller</h2>
                         <div class="description-img">
-                            <img src="../images/Combat_System.png">
+                            <img src="../images/TM_Movement.png">
                         </div>
                     </div>
                 </div>
                 <div class="contributions-container-object">
                     <div class="contribution">
-                        <h2>Player Controller and Camera Management</h2>
                         <p class="content">Our first goal was to be able to <strong>provide players with a fun experience in a scene without enemies or interactable objects</strong>. The simple fact of moving the player in the scene, rotating the camera and locking objects had to be pleasant.
-                            <br><br>For this purpose, I developed and tuned the following features:
-                            <br>-	Script driven movements using Unity Blend Tree system
-                            <br>-	Third person camera using Cinemachine 
-                            <br>-	Lock enemy feature and camera transitions using Cinemachine
-                            </p>
-                    </div>
-                </div>
-    
-                <div class="contributions-container-object">
-                    <div class="contribution">
-                        <div class="description-img">
-                            <img src="../images/Life_Corruption_System.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="contributions-container-object">
-                    <div class="contribution">
-                        <h2>Game loop and combat system</h2>
-                        <p class="content">I developed and tuned the following features:
-                            <br>-	Life and stamina logics
-                            <br>-	Dodge logic
-                            <br>-	Root motion driven attacks
-                            <br>-	Weak point logic
-                            <br>-	Enemy AI including roaming, player detection and combat system using Unity’s Animation State Machine
-                            <br>-	Enemy loop (Health point loss, death)
-                            </p>
+                            <p>For this purpose, I developed and tuned the following features:</p>
+                            <ul>
+                                <li>Code driven customizable movements based on Unity Animation State Machines</li>
+                                <li>Custom Locked movements</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
 
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>Combat system</h2>
+                        <div class="description-img">
+                            <img src="../images/TM_Combat.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <p class="content">
+                            <p>I developed and tuned the following features:</p>
+                            <ul>
+                                <li>Customizable root motion animations for gamefeel purpose</li>
+                                <li>Melee collision checking</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>Camera Management, a Dark souls Retro engineering process</h2>
+                        <div class="description-img">
+                            <img src="../images/TM_LockEnemy.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <p class="content">
+                            <p>I developed and tuned the following features:</p>
+                            <p><strong>Detect Enemies</strong></p>
+                                <ul>
+                                    <li>Check the nearest enemy (Based on distance and angle) inside a Cone attached to the camera.</li>
+                                </ul>
+                            <p><strong>Lock an enemy</strong></p>
+                                <ul>
+                                    <li>The camera follows a middle point located between the locked enemy and the Player.</li>
+                                </ul>
+                            <p><strong>Alternate locks between multiple enemies with Cinemachine Cameras</strong></p>
+                                <ul>
+                                    <li>Shoot a Raycast from the currently locked enemy to the direction pointed by the controller right stick to check to which enemy the lock should swap.</li>
+                                    <li>Setup an inactive camera to follow the next enemy, increase its priority, enable it, and let Cinemachine blend between the cameras</li>
+                                    <li>A new enemy is now locked!</li>
+                                </ul>
+                            <p><strong>A lot of Camera property tweaking !</strong></p>
+                    </div>
+                </div>
+
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <h2>Development of finite state machine driven Ais (The state machine is written in C#)</h2>
+                        <div class="description-img">
+                            <img src="../images/TM_AIEnemy1.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions-container-object">
+                    <div class="contribution">
+                        <p class="content">
+                            <p>I developed and tuned the following features :</p>
+                            <ul>
+                                <li>Customizable roaming for game situation design (Waypoint position, round timings)</li>
+                                <li>Follow Player, Attack, Receive damage, Death</li>
+                                <li>Depending on the player distance (Checked by trigger), the AI executes different attack patterns.</li>
+                            </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
