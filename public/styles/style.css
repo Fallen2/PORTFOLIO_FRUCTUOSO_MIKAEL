@@ -18,6 +18,7 @@
     --yellow-hover: rgb(223, 211, 110);
     --bg-violet : #262121;
     --bg-brown : #58312d;
+    --img-border: #fefee2;
 }
 
 
@@ -50,7 +51,7 @@ html strong{
 }
 
 .content {
-    font-family: "Century Gothic";
+    font-family: "Helvetica";
     text-align: justify;
 }
 
@@ -65,7 +66,7 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-family: "Futura";
     color: var(--main-text);
 }
@@ -76,13 +77,13 @@ h2 {
 
 p {
     font-size: 18px;
-    font-family: "Century Gothic";
+    font-family: "Helvetica";
     color: var(--main-text);
 }
 
 ul li{
-    font-size: 16px;
-    font-family: "Century Gothic";
+    font-size: 18px;
+    font-family: "Helvetica";
     color: var(--main-text);
     list-style: disc outside none;
 }
@@ -126,7 +127,7 @@ ul li{
     padding-bottom: 2px;
     color: white;
     font-weight: 100;
-    font-size: 17px;
+    font-size: 21px;
     font-family: "Century Gothic";
     text-align: center;
     border-radius: 4px;
@@ -383,8 +384,8 @@ width: 99vw;
 }
 
 .project-card-title {
-    background-color: rgb(0 0 0 / 60%);
-    height: 40px;
+    background-color: /*rgb(0 0 0 / 100%);*/ var(--band-dark-grey);
+    height: 60px;
     width: 400px;
     position: absolute;
     bottom: 0px;
@@ -392,7 +393,7 @@ width: 99vw;
 }
 
 .project-card-title h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight : 500;
     font-family : 'QuickSand';
     text-align: center;
@@ -488,7 +489,7 @@ width: 99vw;
     width :  100%;
     border-style: solid;
     border-radius: 10px;
-    border-color: var(--sub-grey);
+    border-color: var(--img-border);
 }
 
 #project-information-presentation{
@@ -536,8 +537,9 @@ width: 99vw;
     flex-wrap: wrap;
     margin-bottom: 80px;
     margin-top: 50px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .contributions-container-object {
@@ -545,7 +547,7 @@ width: 99vw;
     width: 40%;
     flex-wrap: wrap;
     flex-direction: column;
-    /*margin-bottom: 65px;*/
+    margin-bottom: 65px;
 }
 
 .contribution {
