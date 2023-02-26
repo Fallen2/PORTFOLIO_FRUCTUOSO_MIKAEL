@@ -15,9 +15,11 @@
     --tag-purple: #5E3D68;
     --tag-genre: #2D2F36;
     --tag-year: #7a808a;
-    --yellow-hover: rgb(240, 228, 58);
+    --yellow-hover: rgb(223, 211, 110);
+    --bg-violet : #262121;
+    --bg-brown : #58312d;
+    --img-border: #fefee2;
 }
-
 
 
 html {
@@ -27,6 +29,10 @@ html {
 html, body {
     margin: 0;
     padding: 0;
+}
+
+html strong{
+    color: var(--yellow-hover);
 }
 
 @font-face {
@@ -45,7 +51,7 @@ html, body {
 }
 
 .content {
-    font-family: "Century Gothic";
+    font-family: "Helvetica";
     text-align: justify;
 }
 
@@ -57,19 +63,29 @@ h1 {
     font-size: 42px;
     font-family: "Futura";
     color: var(--main-text);
-    margin-top: 0;
 }
 
 h2 {
-    font-size: 38px;
+    font-size: 30px;
     font-family: "Futura";
     color: var(--main-text);
 }
 
+.contribution h2{
+    margin-top : 0;
+}
+
 p {
-    font-size: 17px;
-    font-family: "Century Gothic";
+    font-size: 18px;
+    font-family: "Helvetica";
     color: var(--main-text);
+}
+
+ul li{
+    font-size: 18px;
+    font-family: "Helvetica";
+    color: var(--main-text);
+    list-style: disc outside none;
 }
 
 .section-band h1 {
@@ -98,6 +114,10 @@ p {
     overflow: hidden;
 }
 
+.project-tag{
+    width: 50%;
+}
+
 .tag {
     height: 21px;
     min-width: 30px;
@@ -107,7 +127,7 @@ p {
     padding-bottom: 2px;
     color: white;
     font-weight: 100;
-    font-size: 17px;
+    font-size: 21px;
     font-family: "Century Gothic";
     text-align: center;
     border-radius: 4px;
@@ -204,7 +224,19 @@ p {
     margin-top: 6px;
 }
 
+.header-anchor-project {
+    font-family: "Futura";
+    font-size: 18px;
+    color: var(--main-text);
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
 .header-anchor:hover a{
+    color: var(--yellow-hover);
+}
+
+.header-anchor-project:hover a{
     color: var(--yellow-hover);
 }
 
@@ -213,18 +245,35 @@ a {
     color: var(--main-text);
 }
 
+.disabled{
+    pointer-events: none;
+    width : 150vw;
+}
+
+.link{
+ text-decoration: underline;
+}
+
 #fullscreen-image-container {
     font-size: 0;
     margin-top:45px;
     width: 99vw;
-    height: 44vw;
+    height: 47vw;
     overflow:hidden;
     background-color: black;
+    margin-bottom : -30px;
 
 }
 
 #fullscreen-image-container video{
 width: 99vw;
+}
+
+#presentation-photo {
+    float : left;
+    width: 16vw;
+    height: 16vw;
+    margin-right: 5vw;
 }
 
 .page-container {
@@ -260,7 +309,7 @@ width: 99vw;
 
 .copyright-section {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -274,6 +323,18 @@ width: 99vw;
 }
 
 #AboutMe {
+    scroll-margin-top: 44px;
+}
+
+#project-information-presentation {
+    scroll-margin-top: 44px;
+}
+
+#project-information-gamedesign {
+    scroll-margin-top: 44px;
+}
+
+#project-information-development {
     scroll-margin-top: 44px;
 }
 
@@ -296,8 +357,8 @@ width: 99vw;
     position: relative;
     z-index: -6;
     overflow: visible;
-    height: 180px;
-    width: 320px;
+    height: 225px;
+    width: 400px;
 }
 
 .project-card-link:hover .project-card img {
@@ -317,45 +378,54 @@ width: 99vw;
 
 
 .project-card img {
-    width: 320px;
-    height: 180px;
+    width: 400px;
+    height: 225px;
     border-radius: 14px;
 }
 
 .project-card-title {
-    background-color: rgb(0 0 0 / 60%);
-    height: 40px;
-    width: 320px;
+    background-color: /*rgb(0 0 0 / 100%);*/ var(--band-dark-grey);
+    height: 60px;
+    width: 400px;
     position: absolute;
     bottom: 0px;
     border-radius: 0px 0px 14px 14px;
 }
 
 .project-card-title h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight : 500;
     font-family : 'QuickSand';
     text-align: center;
-    margin: 5px 0 0 0;
+    /*margin: 5px 0 0 0;*/
 }
 
 .project-short-desc-container {
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
+    /*display: none;*/
 }
 
 .project-presentation {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 30px;*/
     
 }
 
+.project-title {
+    width : 100%;
+    text-align: center;
+    margin : 0;
+}
+
+
+
 .project-title h1 {
     font-size: 60px;
-    margin-top: 80-4px;
+    /*margin-top: 80-4px;*/
     margin-bottom: 0;
 }
 
@@ -365,15 +435,26 @@ width: 99vw;
 }
 
 .presentation-container {
-    width: 40%;
-    
+    width: 100%;
+}
+
+.presentation-container h1{
+    font-size: 60px;
 }
 
 .presentation-img {
     margin-right: 80px;
     margin-top: 40px;
-    width :  40%;
-    
+    width :  100%;
+}
+
+.presentation-vid {
+    margin-right: 80px;
+    width :  100%;
+}
+
+.presentation-vid iframe {
+    width : 100%;
 }
 
 .presentation-img img {
@@ -392,25 +473,80 @@ width: 99vw;
     padding-bottom: 50px;
 }
 
+.description-img {
+    width :  100%;
+}
+
+.description-img-woborder {
+    width :  100%;
+}
+
+.description-img-woborder img {
+    width :  100%;
+}
+
+.description-img img {
+    width :  100%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--img-border);
+}
+
+#project-information-presentation{
+    margin-top : 50px;
+    margin-left : 80px;
+    margin-bottom: 50px;
+}
+
+#project-information-gamedesign{
+    background-color: var(--bg-violet);
+}
+
+#project-information-development{
+    background-color: var(--bg-brown);
+}
+
 .project-information {
-    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-information h1{
+    margin-bottom : 0px;
+}
+
+.project-information-title {
+    width: 100%;
+    text-align: center;
+}
+
+.project-information-title h1{
+    font-size: 60px;
+}
+
+.project-information-container {
+    display: flex;
+    width:45%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .contributions-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-bottom: 80px;
-    margin-left:  80px;
     margin-top: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.contributions-container-2 {
+.contributions-container-object {
     display: flex;
     width: 40%;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-right: 80px;
     margin-bottom: 65px;
 }
 
@@ -419,6 +555,7 @@ width: 99vw;
 }
 
 .social-network-container {
+    margin-bottom : 50px;
     display: flex;
     justify-content: center;
     gap: 26px;
