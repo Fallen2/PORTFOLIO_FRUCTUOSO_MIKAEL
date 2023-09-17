@@ -1,9 +1,10 @@
 :root {
     --band-dark-grey: #222222;
     --bg-dark-blue: #373A47;
-    --band-dark-grey: #222222;
+    --bg-main-color: #ffffff;
+    --band-main-color: #ffffff;
     --sub-grey: #B7B7B7;
-    --main-text: white;
+    --main-text: rgb(0, 0, 0);
     --header-black: black;
     --copyright: #B9B9B9;
     --tag-red: #AB544B;
@@ -290,7 +291,7 @@ width: 99vw;
     margin-top: 50px;
     justify-content: center;
     text-align: center;
-    background-color: var(--band-dark-grey);
+    background-color: var(--band-main-color);
 }
 
 .section-band-first {
@@ -384,7 +385,7 @@ width: 99vw;
 }
 
 .project-card-title {
-    background-color: /*rgb(0 0 0 / 100%);*/ var(--band-dark-grey);
+    background-color: /*rgb(0 0 0 / 100%);*/ var(--band-main-color);
     height: 60px;
     width: 400px;
     position: absolute;
