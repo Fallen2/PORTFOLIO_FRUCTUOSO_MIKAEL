@@ -481,8 +481,6 @@ hr {
 
 
 .project-title h1 {
-    font-size: 60px;
-    /*margin-top: 80-4px;*/
     margin-bottom: 0;
 }
 
@@ -492,42 +490,49 @@ hr {
 }
 
 .presentation-container {
-    width: 100%;
+    width: 50em;
 }
 
 .presentation-container h1{
-    font-size: 60px;
+    font-size: 2em;
+    text-decoration: underline var(--specific-color);
 }
 
 .presentation-img {
-    margin-right: 80px;
-    margin-top: 40px;
-    width :  100%;
+
 }
 
 .presentation-vid {
-    margin-right: 80px;
-    width :  100%;
+    /*position: relative;
+    width: 100%;
+    height: 0;*/
 }
 
 .presentation-vid iframe {
-    width : 100%;
+    
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+
+    width : 1280px;
+    height : 720px;
 }
 
 .presentation-img img {
     width :  100%;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: var(--sub-grey);
+    border-radius: 7px;
 }
 
 .presentation-img iframe {
-    width: 38vw;
+    /*width: 100%;*/
+    /*width: 38vw;
     height: 21vw;
     border-style: solid;
     border-radius: 10px;
     border-color: var(--sub-grey);
-    padding-bottom: 50px;
+    padding-bottom: 50px;*/
 }
 
 .description-img {
@@ -551,26 +556,26 @@ hr {
 
 #project-information-presentation{
     margin-top : 50px;
-    margin-left : 80px;
-    margin-bottom: 50px;
 }
 
-#project-information-gamedesign{
-    background-color: var(--bg-violet);
-}
-
-#project-information-development{
-    background-color: var(--bg-brown);
+#project-information-video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;;
+    flex-direction: row;
 }
 
 .project-information {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 3em;
+    box-shadow: 1px 10px 13px 0px rgb(0 0 0 / 10%);
+    padding: 3em 1em 3em 1em;
 }
 
 .project-information h1{
-    margin-bottom : 0px;
+    margin : 0px;
 }
 
 .project-information-title {
@@ -584,7 +589,6 @@ hr {
 
 .project-information-container {
     display: flex;
-    width:45%;
     flex-wrap: wrap;
     flex-direction: row;
 }
