@@ -10,88 +10,73 @@
 
 </head>
 
-<body style="background-color: var(--bg-dark-blue);">
+<body>
     <div class="page-container">
-        <div id="header-container">
-            <div id="header-bg"></div>
-            <div id="header-name">
-                <a href="/"><span>Mikaël Fructuoso</span></a>
-            </div>
-            <div id="header-anchors-container">
-                <div class="header-anchor">
-                    <span><a href="/#AboutMe">About me</a></span>
-                </div>
-                <div class="header-anchor">
-                    <span><a href="/#Projects">Projects</a></span>
-                </div>
-                <div class="header-anchor">
-                    <span><a href="/#Resume">Resume</a></span>
-                </div>
-            </div>
-        </div>
 
-        <div class="project-information">
-            <div class="project-title">
-                <h1>Alpha_6</h1>
-                <h2 class="subtitle">FPS</h2>
-            </div>
-    
-            <div class="project-presentation">
-                <div class="presentation-container">
-                    <h2>Présentation</h2>
-                    <p class="content">Alpha_6 is a first-person shooter game which development started in a Unity university course. The development team is composed of 2 game developers.
+        <div class="project-information" id="project-information-presentation">
+            <div class="project-information-container">
+                <div class="project-presentation">
+                    <div class="presentation-container">
+                        <h1 class="title">Alpha_6</h1>
+                        <h2 class="subtitle">A speedrun oriented FPS where time slow down when you aim</h2>
+                        <p class="content">
+                            <i>Remember the location of your foes and optimize your path to leave this unknown complex as fast as you can.</i>
                         </p>
-                    <div class="tag-container">
-                        <div class="tag" style="background-color: var(--tag-red)">
-                            <span>Unity 3D</span>
-                        </div>
-                        <div class="tag" style="background-color: var(--tag-pastel-green)">
-                            <span>GD</span>
-                        </div>
-                        <div class="tag" style="background-color: var(--tag-pistachio-green)">
-                            <span>Dev</span>
-                        </div>
-                        <div class="tag" style="background-color: var(--tag-dark-blue)">
-                            <span>3D Graphist</span>
-                        </div>
-                        <div class="tag" style="background-color: var(--tag-genre)">
-                            <span>FPS</span>
+                        <p class="content">
+                            Alpha_6 is a first-person shooter game prototype developed as part of an university course. The development team is composed of 2 game developers.
+                            <br>
+                            In the project, I helded the positions of <strong>Gameplay Programmer</strong> and <strong>Game Designer</strong>.
+                        </p>
+                        <p class="content">Our goal was to provide a speedrun experience based on a simple mechanic. We came up with a mechanic based on bullets that bounce on walls and deal damages according to the number of bounces made before touching an enemy. With this concept, we could easily imagine speedrunners remembering every enemy spot and killing them without even looking at them.</p>
+                        <div class="tag-container project-tag">
+                            <div class="tag">
+                                <span>Unity</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="project-information-container">
                 <div class="presentation-img">
-                    <img src="../images/alpha_6.jpg">
+                    <img src="https://media.giphy.com/media/sc2LiPgFWs3uDmm1YA/giphy.gif" alt="Alpha 6">
                 </div>
             </div>
         </div>
-
-        <div class="contributions-container">
-            <div class="contributions-container-2">
-                <div class="contribution">
-                    <h2>Gameplay & Game Design</h2>
-                    <p class="content">Our goal was to provide a speedrun experience based on a simple mechanic. We came up with a mechanic based on gun bullets that bounce on walls and deal damages according to the number of bounces made before touching an enemy. With this concept, we could easily imagine speedrunners remembering every enemy spot and killing them without even looking at them.</p>
-                </div>
-                <div class="contribution" style="float: left;">
-                    <h2>Visuals and feedbacks</h2>
-                    <p class="content">I implemented a visual feedback on the tiles touched by a bullet. It allows the players to remember the path their bullet took before hitting the enemy for speedrun purposes. <br><br>
-                        I also worked on the enemy death explosion visual feedback, highlighting where the bullet hits him. On hit, it converts the enemy to a tiled 3D box and spawns a spherical force emitter at the impact point location resulting in the explosion of the enemy in dozens of little colored cubes.</p>
-                </div>
-            </div>
-            <div class="contributions-container-2">
-                <div class="contribution">
-                    <h2>Development</h2>
-                    <p class="content">I implemented the different behaviors of a Melee and a Ranged enemy:</p>
-                        <ul  class="content">
-                            <li>The melee enemy starts following the player on sight and blows himself up when near enough.</li>
-                            <li>The ranged enemy starts following the player on sight and locks him with his laser beam before releasing it a few seconds after.</li>
-                        </ul>
-                        <p class="content">I also developed an algorithm that allows the level designers to create tiled rectangular 3D shapes with density, scale and gap control. In this project, it was used in Editor for level design purpose and in-game for the enemy explosions and the bullet visual feedback on wall bounce.</p>
-                </div>
+        <div class="project-information" id="project-information-video">
+            <div class="presentation-vid">
+                <iframe src="https://www.youtube.com/embed/OkQ-kCe0xcA" title="Alpha_6 - Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
-        
-        <div class="copyright-section content">
-            <p>Copyright © 2021 by Mikaël Fructuoso | All images, logos and names are used with permission</p>
+        <div class="project-information" id="project-information-presentation">
+            <div class="project-information-container">
+                <div class="project-presentation">
+                    <div class="presentation-container">
+                        <h1 class="title">Contribution</h1>
+                        <p class="content">
+                            Take part on the design of the game concept
+                            <br>
+                            Develop basic ranged and melee AIs
+                            <br>
+                            Implement a feedback when a bullet touches a specific tile so that the player remembers where to aim for his next run.
+                            <br>
+                            Make a little tool to create tiled rectangular 3D shapes of any density, scale and gap between cubes. Used to create the enemy explosion feedback and the level in itself.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <iframe width="552" height="167" frameborder="0" src="https://itch.io/embed/1575616"><a href="https://eddyboreal.itch.io/alpha6">Rêves Sympas by eddyboreal</a></iframe>
+        </div>
+        <div class="project-information" id="project-information-presentation">
+            <div class="project-information-container">
+                <div class="project-presentation">
+                    <div class="presentation-container">
+                        <h1 class="title">Created with</h1>
+                        <p class="content">
+                            Eddy ABADA - Game Designer & Programmer
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

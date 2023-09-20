@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta name="description" content="My Portfolio">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body style="background-color: var(--bg-dark-blue);">
+    <div class="page-container">
+        <div id="header-container">
+            <div id="header-bg"></div>
+            <div id="header-name">
+                <a href="/"><span>Mikaël Fructuoso</span></a>
+            </div>
+            <div id="header-anchors-container">
+                <div class="header-anchor">
+                    <span><a href="/#AboutMe">About me</a></span>
+                </div>
+                <div class="header-anchor">
+                    <span><a href="/#Projects">Projects</a></span>
+                </div>
+                <div class="header-anchor">
+                    <span><a href="/#Resume">Resume</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-information">
+            <div class="project-title">
+                <h1>Alpha_6</h1>
+                <h2 class="subtitle">FPS</h2>
+            </div>
+    
+            <div class="project-presentation">
+                <div class="presentation-container">
+                    <h2>Présentation</h2>
+                    <p class="content">Alpha_6 is a first-person shooter game which development started in a Unity university course. The development team is composed of 2 game developers.
+                        </p>
+                    <div class="tag-container">
+                        <div class="tag" style="background-color: var(--tag-red)">
+                            <span>Unity 3D</span>
+                        </div>
+                        <div class="tag" style="background-color: var(--tag-pastel-green)">
+                            <span>GD</span>
+                        </div>
+                        <div class="tag" style="background-color: var(--tag-pistachio-green)">
+                            <span>Dev</span>
+                        </div>
+                        <div class="tag" style="background-color: var(--tag-dark-blue)">
+                            <span>3D Graphist</span>
+                        </div>
+                        <div class="tag" style="background-color: var(--tag-genre)">
+                            <span>FPS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="presentation-img">
+                    <img src="../images/alpha_6.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="contributions-container">
+            <div class="contributions-container-2">
+                <div class="contribution">
+                    <h2>Gameplay & Game Design</h2>
+                    <p class="content">Our goal was to provide a speedrun experience based on a simple mechanic. We came up with a mechanic based on gun bullets that bounce on walls and deal damages according to the number of bounces made before touching an enemy. With this concept, we could easily imagine speedrunners remembering every enemy spot and killing them without even looking at them.</p>
+                </div>
+                <div class="contribution" style="float: left;">
+                    <h2>Visuals and feedbacks</h2>
+                    <p class="content">I implemented a visual feedback on the tiles touched by a bullet. It allows the players to remember the path their bullet took before hitting the enemy for speedrun purposes. <br><br>
+                        I also worked on the enemy death explosion visual feedback, highlighting where the bullet hits him. On hit, it converts the enemy to a tiled 3D box and spawns a spherical force emitter at the impact point location resulting in the explosion of the enemy in dozens of little colored cubes.</p>
+                </div>
+            </div>
+            <div class="contributions-container-2">
+                <div class="contribution">
+                    <h2>Development</h2>
+                    <p class="content">I implemented the different behaviors of a Melee and a Ranged enemy:</p>
+                        <ul  class="content">
+                            <li>The melee enemy starts following the player on sight and blows himself up when near enough.</li>
+                            <li>The ranged enemy starts following the player on sight and locks him with his laser beam before releasing it a few seconds after.</li>
+                        </ul>
+                        <p class="content">I also developed an algorithm that allows the level designers to create tiled rectangular 3D shapes with density, scale and gap control. In this project, it was used in Editor for level design purpose and in-game for the enemy explosions and the bullet visual feedback on wall bounce.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright-section content">
+            <p>Copyright © 2021 by Mikaël Fructuoso | All images, logos and names are used with permission</p>
+        </div>
+    </div>
+</body>
+</html>
