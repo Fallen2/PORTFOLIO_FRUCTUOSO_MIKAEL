@@ -26,11 +26,6 @@
 }
 
 
-#main{
-    
-    
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -42,6 +37,19 @@ html, body {
     margin: 0 auto;
     max-width: 110em;
 }
+
+/*@media screen and (max-width: 1280px){
+    body, input, select, textarea {
+        font-size: 20pt;
+    }
+}
+
+
+@media screen and (max-width: 736px){
+    body > .page-container{ 
+        padding: 0 2em 0.1em 2em;
+    }
+}*/
 
 html strong{
     color: var(--bold-color);
@@ -313,7 +321,6 @@ width: 99vw;
 }
 
 .section-container {
-    width: 100%;
     margin-bottom: 3em;
     box-shadow: 1px 10px 13px 0px rgb(0 0 0 / 10%);
     padding: 3em 1em 3em 1em;
@@ -464,21 +471,11 @@ hr {
     column-gap: 1em;
 }
 
-.project-presentation {
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;*/
-    
-}
-
 .project-title {
     width : 100%;
     text-align: center;
     margin : 0;
 }
-
-
 
 .project-title h1 {
     margin-bottom: 0;
@@ -490,7 +487,7 @@ hr {
 }
 
 .presentation-container {
-    width: 50em;
+    /*width: 50em;*/
 }
 
 .presentation-container h1{
@@ -498,26 +495,19 @@ hr {
     text-decoration: underline var(--specific-color);
 }
 
-.presentation-img {
-
-}
-
 .presentation-vid {
-    /*position: relative;
+    position: relative;
     width: 100%;
-    height: 0;*/
+    padding-bottom: 56.25%;
+    height: 0;
 }
 
-.presentation-vid iframe {
-    
-    /*position: absolute;
+.presentation-vid iframe {  
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;*/
-
-    width : 1280px;
-    height : 720px;
+    height:100%;
 }
 
 .presentation-img img {
@@ -567,7 +557,7 @@ hr {
 
 .project-information {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: space-between;
     margin-bottom: 3em;
     box-shadow: 1px 10px 13px 0px rgb(0 0 0 / 10%);
