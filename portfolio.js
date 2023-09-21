@@ -36,6 +36,10 @@ app.get('/Jurassic_Snap.html', (req, res) => {
     res.sendFile('/pages/Jurassic_Snap.html', { root: __dirname });
 });
 
+app.get('/MyNameIsJiji.html', (req, res) => {
+    res.sendFile('/pages/MyNameIsJiji.html', { root: __dirname });
+});
+
 app.get('/resume', (req, res) => {
     //request(__dirname + req.params.file).pipe(res);
    res.set( 'Content-Type', 'application/pdf' );

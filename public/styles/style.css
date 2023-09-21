@@ -5,7 +5,7 @@
     --band-main-color: #ffffff;
     --card-desc-color: #313131;
     --sub-grey: #B7B7B7;
-    --main-text: rgb(0, 0, 0);
+    --main-text: rgb(61, 61, 61);
     --specific-color: #D8A698;
     --tag-red: #AB544B;
     --tag-brown: #AB764B;
@@ -18,7 +18,8 @@
     --tag-year: #7a808a;
     --tag-main-color: rgb(32, 32, 32);
     --yellow-hover: #D8A698;
-    --bold-color: #D8A698;
+    --title-color: #303030;
+    --bold-color: #303030;
     --hover-color: #ffffff;
     --bg-violet : #262121;
     --bg-brown : #58312d;
@@ -82,13 +83,13 @@ html strong{
 h1 {
     font-size: 2em;
     font-family: "Futura";
-    color: var(--main-text);
+    color: var(--title-color);
 }
 
 h2 {
     font-size: 1em;
     font-family: "Futura";
-    color: var(--main-text);
+    color: var(--title-color);
 }
 
 .contribution h2{
@@ -96,17 +97,17 @@ h2 {
 }
 
 p {
-    font-size: 0.8em;
-    font-family: "Helvetica";
+    font-size: 1em;
+    font-family: "Segoe UI";
     color: var(--main-text);
     word-wrap: normal;
 }
 
 ul li{
-    font-size: 18px;
-    font-family: "Helvetica";
+    list-style-type: none;
+    font-size: 1em;
+    font-family: "Segoe UI";
     color: var(--main-text);
-    list-style: disc outside none;
 }
 
 .section-band h1 {
@@ -288,7 +289,6 @@ width: 99vw;
 }
 
 #presentation-photo {
-    float : left;
     width: 100%;
     border-radius: 7px;
 }
@@ -515,14 +515,8 @@ hr {
     border-radius: 7px;
 }
 
-.presentation-img iframe {
-    /*width: 100%;*/
-    /*width: 38vw;
-    height: 21vw;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: var(--sub-grey);
-    padding-bottom: 50px;*/
+.presentation-img{
+    width:30em;
 }
 
 .description-img {
@@ -556,12 +550,13 @@ hr {
 }
 
 .project-information {
-    display: flex;
-    flex-wrap: no-wrap;
-    justify-content: space-between;
     margin-bottom: 3em;
     box-shadow: 1px 10px 13px 0px rgb(0 0 0 / 10%);
     padding: 3em 1em 3em 1em;
+}
+
+.project-presentation{
+    width:50em;
 }
 
 .project-information h1{
@@ -581,6 +576,8 @@ hr {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contributions-container {
