@@ -43,14 +43,10 @@ html, body {
     body, input, select, textarea {
         font-size: 20pt;
     }
-}
-
-
-@media screen and (max-width: 736px){
-    body > .page-container{ 
-        padding: 0 2em 0.1em 2em;
-    }
 }*/
+
+
+
 
 html strong{
     color: var(--bold-color);
@@ -311,7 +307,7 @@ width: 99vw;
 }
 
 #latest-project-description-div{
-    width:30em;
+    width:40em;
     border-radius: 7px;
 }
 
@@ -640,4 +636,23 @@ hr {
 li{
     list-style-type: circle;
     color  : var(--main-text);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px){
+    html, body{ 
+        padding: 0 2em 0.1em 2em;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
 }
