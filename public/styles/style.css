@@ -37,7 +37,10 @@ html, body {
     padding: 0 8em 0.1em 8em;
     margin: 0 auto;
     max-width: 110em;
-    /*background-color: var(--bg-main-color);*/
+}
+
+body{
+    background-color: var(--bg-main-color);
 }
 
 /*@media screen and (max-width: 1280px){
@@ -635,6 +638,12 @@ hr {
     background-size: 48px;
 }
 
+#back-arrow:hover { 
+    border: 3px solid;
+    border-radius: 7px;
+    border-color: var(--specific-color);
+}
+
 li{
     list-style-type: circle;
     color  : var(--main-text);
@@ -642,7 +651,7 @@ li{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 724px){
     html, body{ 
         padding: 0 2em 0.1em 2em;
     }
@@ -663,13 +672,13 @@ li{
     }
 
     .project-card{
-        /*width:800px;
-        height:450px;*/
+        width:800px;
+        height:450px;
     }
 
     .project-card > img{
-        /*width:800px;
-        height:450px;*/
+        width:800px;
+        height:450px;
     }
 
     .project-card-title-bis{
