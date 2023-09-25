@@ -677,13 +677,13 @@ li{
     }
 
     .project-card{
-        width:800px;
-        height:450px;
+        /*width:800px;
+        height:450px;*/
     }
 
     .project-card > img{
-        width:800px;
-        height:450px;
+        /*width:800px;
+        height:450px;*/
     }
 
     .project-card-title-bis{
