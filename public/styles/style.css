@@ -46,7 +46,9 @@ html, body {
 }*/
 
 
-
+img{
+    border-radius:7px;
+}
 
 html strong{
     color: var(--bold-color);
@@ -100,7 +102,7 @@ p {
 }
 
 ul li{
-    list-style-type: none;
+    list-style-type: circle;
     font-size: 1em;
     font-family: "Segoe UI";
     color: var(--main-text);
@@ -303,11 +305,14 @@ width: 99vw;
 
 #latest-project-image-div{
     width:40em;
+    position: relative;
+    z-index: -6;
+    overflow: visible;
 }
 
 #latest-project-description-div{
     width:40em;
-    border-radius: 7px;
+    /*border-radius: 7px;*/
 }
 
 .page-container {
@@ -356,9 +361,10 @@ hr {
     margin-bottom: 0px;
     padding-top: 1px;
     padding-bottom: 1px;
+    font-family: "Segoe UI";
     justify-content: center;
     text-align: center;
-    background-color: var(--specific-color);
+    background-color: none;
 }
 
 #Projects {
@@ -411,10 +417,19 @@ hr {
   box-shadow: 0 0.5em 0.5em -0.4em #000000;
 }
 
+
+#latest-project-link:hover #latest-project-image-div img,
+#latest-project-link:focus #latest-project-image-div img {
+  transform: translateY(-0.25em);
+  
+  outline-offset: -5px;
+  box-shadow: 0 0.5em 0.5em -0.4em #000000;
+}
+
 .project-card img {
     width: 400px;
     height: 225px;
-    border-radius: 7px;
+    /*border-radius: 7px;*/
 }
 
 .game-motor-logo{
@@ -505,7 +520,7 @@ hr {
 
 .presentation-img img {
     width :  100%;
-    border-radius: 7px;
+    /*border-radius: 7px;*/
 }
 
 .presentation-img{
@@ -527,7 +542,7 @@ hr {
 .description-img img {
     width :  100%;
     border-style: solid;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     border-color: var(--img-border);
 }
 
@@ -550,6 +565,10 @@ hr {
 
 .project-presentation{
     width:50em;
+}
+
+.project-contribution{
+    /*width:50em;*/
 }
 
 .project-information h1{

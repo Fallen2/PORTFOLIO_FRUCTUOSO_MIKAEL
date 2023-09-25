@@ -12,6 +12,10 @@ app.get('/temp-page.html', (req, res) => {
     res.sendFile('/pages/temp-page.html', { root: __dirname });
 });
 
+app.get('/Outcast.html', (req, res) => {
+    res.sendFile('/pages/Outcast.html', { root: __dirname });
+});
+
 app.get('/MappaMundi.html', (req, res) => {
     res.sendFile('/pages/MappaMundi.html', { root: __dirname });
 });
