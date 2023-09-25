@@ -1,8 +1,8 @@
 :root {
     --band-dark-grey: #222222;
     --bg-dark-blue: #373A47;
-    --bg-main-color: #ffffff;
-    --band-main-color: #ffffff;
+    --bg-main-color: #F4F3F2;
+    --band-main-color: #F4F3F2;
     --card-desc-color: #313131;
     --sub-grey: #B7B7B7;
     --main-text: rgb(61, 61, 61);
@@ -37,6 +37,7 @@ html, body {
     padding: 0 8em 0.1em 8em;
     margin: 0 auto;
     max-width: 110em;
+    /*background-color: var(--bg-main-color);*/
 }
 
 /*@media screen and (max-width: 1280px){
@@ -211,46 +212,22 @@ ul li{
     margin-top: 10px;
 }
 
-/* Fade in */
-.header-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-  }
+.header-link {
+    border: 1px solid;
+    border-radius: 7px;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    border-color: var(--specific-color);
+    transition: 0.25s;
+    font-weight: bold;
+}
 
-  .header-link {
-    position: relative;
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .header-link:hover {
-    color: #000;
-  }
-  
-  .header-link::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    opacity: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(255, 0, 0);
-    transform: scaleX(0);
-    transition: opacity 300ms, transform 0.3s ease;
-  }
-  
-  .header-link:hover::before {
-    transform: scaleX(1);
-    opacity: 1;
-  }
+/* Animate the size, inside*/
+.header-link:hover,
+.header-link:focus {
+  background-color: var(--specific-color);
+}
 
 .header-anchor-project:hover a{
     color: var(--hover-color);
@@ -618,6 +595,7 @@ hr {
     margin-bottom : 50px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 26px;
 }
 
