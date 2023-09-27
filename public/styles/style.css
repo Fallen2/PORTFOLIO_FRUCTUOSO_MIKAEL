@@ -7,15 +7,6 @@
     --sub-grey: #B7B7B7;
     --main-text: rgb(61, 61, 61);
     --specific-color: #D8A698;
-    --tag-red: #AB544B;
-    --tag-brown: #AB764B;
-    --tag-pastel-green: #A7AB4B;
-    --tag-pistachio-green: #61AB4B;
-    --tag-dark-blue: #4B50AB;
-    --tag-light-blue: #4BAB98;
-    --tag-purple: #5E3D68;
-    --tag-genre: #2D2F36;
-    --tag-year: #7a808a;
     --tag-main-color: rgb(32, 32, 32);
     --yellow-hover: #D8A698;
     --title-color: #303030;
@@ -75,7 +66,7 @@ html strong{
 
 .content {
     font-family:"Segoe UI";
-    text-align: left;
+    text-align: justify;
 }
 
 .title {
@@ -149,10 +140,19 @@ ul li{
     padding-right: 7px;
     padding-top: 2px;
     padding-bottom: 2px;
-    color: white;
+    
+    /*FONT*/
+    font-weight: bold;
     font-size: 1em;
-    font-family: "Century Gothic";
+    font-family: "Segoe UI";
     float: left;
+    color: var(--main-text);
+
+    /*Border*/
+    border: 1px solid;
+    border-radius: 7px;
+    line-height: 1;
+    border-color: var(--specific-color);
     background-color: var(--specific-color);
 }
 
@@ -549,7 +549,7 @@ hr {
 }
 
 .project-contribution{
-    /*width:50em;*/
+    width:40em;
 }
 
 .project-information h1{
@@ -638,10 +638,15 @@ hr {
     background-size: 48px;
 }
 
-#back-arrow:hover { 
-    border: 3px solid;
-    border-radius: 7px;
-    border-color: var(--specific-color);
+#back-arrow:hover {
+    background-image: url(../images/colored_arrow_hover.png); 
+}
+
+#appeal-studios-logo{
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/AppealStudiosLogo.png);
+    background-size: 48px;
 }
 
 li{
