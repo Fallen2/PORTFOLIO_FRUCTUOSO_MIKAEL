@@ -64,6 +64,12 @@ html strong{
     src: url("../fonts/Futura Heavy.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/Segoe\ UI.ttf") format("opentype");
+}
+
+
 .content {
     font-family:"Segoe UI";
     text-align: justify;
